@@ -14,7 +14,7 @@ export default function App() {
     setInput("");
 
     try {
-      const res = await fetch("http://localhost:3001/chat", {
+      const res = await fetch("https://cypher-uv1o.onrender.com/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
